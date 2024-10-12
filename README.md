@@ -65,8 +65,26 @@ The CSV file includes the following columns: country, region, population, articl
 
 ### API Documentation
 
-ORES requires a specific revision ID of an article to be able to make a label prediction. The revision ID of article pages are optained  using the [API:Info](https://www.mediawiki.org/wiki/API:Info) request to get a range of metadata on an article
+- [ORES API documentation](https://ores.wikimedia.org)
+- ORES requires a specific revision ID of an article to be able to make a label prediction. The revision ID of article pages are optained  using the [API:Info](https://www.mediawiki.org/wiki/API:Info) request to get a range of metadata on an article
 
 
 
 ### Research Implications
+
+- What biases did you expect to find in the data (before you started working with it), and why?
+
+Before I started working with the data, I anticipated biases due to the exclusion of non-English articles on Wikipedia, which would disadvantage countries where English is not the primary language.
+
+- What (potential) sources of bias did you discover in the course of your data processing and analysis?
+
+The population dataset contained cumulative regional values (ALL CAPS entries) in addition to country-level data. This introduced complexity when merging with the country-level Wikipedia data. If regional population values were incorrectly interpreted as country-level data, it could have resulted in inaccurate per-capita calculations.
+
+
+- How might a researcher supplement or transform this dataset to potentially correct for the limitations/biases you observed?
+
+To address the biases, a researcher could supplement this dataset with additional information such as articles from non-English versions of Wikipedia or external population datasets with more consistent country-level data to avoid confusion in combining datasets.
+
+
+- Reflection:
+Throughout this assignment, I've learned about the challenges that arise when processing multiple datasets from different sources, which can introduce biases as missing data can lead to inaccurate representations. A surprising findings was that many of the countries with the lowest total articles per capita are non-English speaking. I believe this is likely due to the dataset's focus on English articles and Wikipedia’s reliance on user-generated content, which tends to be more robust in regions with larger English-speaking populations.
