@@ -17,6 +17,8 @@ An analysis of how the coverage of politicians on Wikipedia and the quality of a
 
 The source data and code for this dataset is licensed under:
 - [Creative Commons Attribution-ShareAlike 3.0 (CC-BY-SA 3.0)](https://creativecommons.org/licenses/by-sa/3.0/deed.en)
+- [GNU Free Documentation License (GFDL)](https://www.gnu.org/licenses/fdl-1.3.en.html)
+- For more details, please refer to the [Wikimedia Foundation terms of use](https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use)
 
 
 ### Final Output Filenames and Directory Structure
